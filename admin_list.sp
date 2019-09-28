@@ -27,7 +27,7 @@ public void OnPluginStart()
 
 public Action Command_ShowAdminsOnline(int client, int args)
 {
-	for (int index = 1; index < MaxClients; index++)
+	for (int index = 1; index <= MaxClients; index++)
 	{
 		if(IsClientInGame(index))
 		{
